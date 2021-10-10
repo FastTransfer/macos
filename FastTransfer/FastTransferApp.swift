@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct FastTransferApp: App {
+
+    let address: String
+
+    init() {
+        let server = Server()
+        address = server.run()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(address: address)
         }
     }
 }

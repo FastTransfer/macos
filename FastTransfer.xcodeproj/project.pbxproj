@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F41A5B152713456B0053B768 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = F41A5B142713456B0053B768 /* Swifter */; };
+		F41A5B1727134CAD0053B768 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A5B1627134CAD0053B768 /* Server.swift */; };
 		F46943C927133F5E0065217F /* FastTransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46943C827133F5E0065217F /* FastTransferApp.swift */; };
 		F46943CB27133F5E0065217F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46943CA27133F5E0065217F /* ContentView.swift */; };
 		F46943CD27133F600065217F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46943CC27133F600065217F /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F41A5B1627134CAD0053B768 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F46943C527133F5E0065217F /* FastTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46943C827133F5E0065217F /* FastTransferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTransferApp.swift; sourceTree = "<group>"; };
 		F46943CA27133F5E0065217F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F46943CC27133F600065217F /* Assets.xcassets */,
 				F46943D127133F600065217F /* FastTransfer.entitlements */,
 				F46943CE27133F600065217F /* Preview Content */,
+				F41A5B1627134CAD0053B768 /* Server.swift */,
 			);
 			path = FastTransfer;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46943CB27133F5E0065217F /* ContentView.swift in Sources */,
+				F41A5B1727134CAD0053B768 /* Server.swift in Sources */,
 				F46943C927133F5E0065217F /* FastTransferApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

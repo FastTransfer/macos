@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView : View {
+
+    let address: String
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("FastTransfer server started!").padding(.top)
+        Link(address, destination: URL(string: address)!).padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(address: "http://localhost:8090")
     }
 }
