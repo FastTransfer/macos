@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41A5B152713456B0053B768 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = F41A5B142713456B0053B768 /* Swifter */; };
 		F46943C927133F5E0065217F /* FastTransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46943C827133F5E0065217F /* FastTransferApp.swift */; };
 		F46943CB27133F5E0065217F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46943CA27133F5E0065217F /* ContentView.swift */; };
 		F46943CD27133F600065217F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46943CC27133F600065217F /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41A5B152713456B0053B768 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = FastTransfer;
+			packageProductDependencies = (
+				F41A5B142713456B0053B768 /* Swifter */,
+			);
 			productName = FastTransfer;
 			productReference = F46943C527133F5E0065217F /* FastTransfer.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = F46943BC27133F5E0065217F;
+			packageReferences = (
+				F41A5B132713456B0053B768 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = F46943C627133F5E0065217F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F41A5B132713456B0053B768 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F41A5B142713456B0053B768 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41A5B132713456B0053B768 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F46943BD27133F5E0065217F /* Project object */;
 }
